@@ -20,7 +20,6 @@ do{
 }while(true);
 
 
-
 // Reader Program Implementation for the Reader-Writer Problem
 
 do{

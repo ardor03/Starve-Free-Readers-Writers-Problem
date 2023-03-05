@@ -3,6 +3,7 @@
 // wrt=1
 // mutex=1
 
+//////////////////////////////////////////////////////////////////
 
 // Writer Program Implementation for the Reader-Writer Problem
 
@@ -14,6 +15,7 @@ do{
 
 }while(true);
 
+//////////////////////////////////////////////////////////////////
 
 // Reader Program Implementation for the Reader-Writer Problem
 

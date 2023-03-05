@@ -1,0 +1,46 @@
+// Variable and Semaphore Initialization
+// read=0
+// wrt=1
+// mutex=1
+
+// Writer
+
+do{
+
+    P(wrt); // request critical section
+
+    // Write operation performed in critical section here
+
+    V(wrt);
+
+}while(true);
+
+
+
+// Reader
+
+do{
+
+   P(mutex);
+
+   read++; // used to maintain the number of readers
+                        
+   if(read==1){
+      P(wrt); // wait for any previous writer to finish its ongoing critical section
+   }
+
+   V(mutex);
+
+   // perform read operations here
+
+   P(mutex);
+
+   read--;
+
+   if (read == 0){
+       V(wrt);
+   }
+
+   V(mutex);
+
+} while(true);

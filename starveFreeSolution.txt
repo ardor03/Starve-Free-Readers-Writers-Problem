@@ -5,7 +5,8 @@
 // mutex=1
 // entry=1
 
-// Writer
+
+// Writer Program Implementation for the Reader-Writer Problem
 
 do{
 
@@ -20,7 +21,7 @@ do{
 
 
 
-// Reader
+// Reader Program Implementation for the Reader-Writer Problem
 
 do{
 

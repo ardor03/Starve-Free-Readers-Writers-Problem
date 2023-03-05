@@ -5,6 +5,7 @@
 // mutex=1
 // entry=1
 
+//////////////////////////////////////////////////////////////////
 
 // Writer Program Implementation for the Reader-Writer Problem
 
@@ -19,6 +20,7 @@ do{
 
 }while(true);
 
+//////////////////////////////////////////////////////////////////
 
 // Reader Program Implementation for the Reader-Writer Problem
 

@@ -8,9 +8,7 @@
 do{
 
     P(wrt); // request critical section
-
     // Write operation performed in critical section here
-
     V(wrt);
 
 }while(true);
@@ -22,7 +20,6 @@ do{
 do{
 
    P(mutex);
-
    read++; // used to maintain the number of readers
                         
    if(read==1){
@@ -30,13 +27,11 @@ do{
    }
 
    V(mutex);
-
    // perform read operations here
-
    P(mutex);
 
    read--;
-
+   
    if (read == 0){
        V(wrt);
    }
